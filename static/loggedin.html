@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1>Express</h1>
+  <p>Welcome to Express, chris</p>
+  <p>The server's favorite number is currently 42. <br>
+    Your favorite number is currently 1.
+    </p>
+    <form action="increment" method="POST">
+      <div>
+        Want to increment the server's favorite number by your favorite number?
+      <div><button>DO IT</button></div>
+  
+    </form>
+    <form action="update" method="POST">
+      <div>
+        Want to update your favorite number? 
+        <div> 
+        <label for="number">enter it here:</label>
+        <input name="number" id="number">
+      </div>
+      <div><button>DO IT</button></div>
+  
+    </form>
+    <form action="logout" method="POST">
+      <div><button>logout</button></div>
+      </form>
+    <p>list of logged in users:
+      <ul>
+        <li>chris</li>
+      </ul>
+    </p>
+        
+  
+</body>
+
+</html>

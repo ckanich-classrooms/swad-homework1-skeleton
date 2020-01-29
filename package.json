@@ -1,0 +1,21 @@
+{
+  "name": "swad-homework1-skeleton",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "debug": "cross-env DEBUG=express:*,homework1* node ./bin/www",
+    "start": "node ./bin/www",
+    "test": "cross-env NODE_ENV=test mocha"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "cross-env": "^7.0.0",
+    "mocha": "^7.0.1"
+  }
+}
