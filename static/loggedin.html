@@ -2,55 +2,60 @@
 
 <head>
   <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <div class="header">
-    <h1>Express</h1>
-    <p>Welcome to Express, chris</p>
-    <form action="logout" method="POST">
-      <div><button id="logout">logout</buttonid="logout">
-      </div>
-    </form>
-  </div>
- 
-    <p class="section-title">The server's favorite number is currently 42. <br>
-      Your favorite number is currently 1.
-    </p>
 
-    <div class="section">
-      <form>
-          <p class="section-title">Want to increment the server's favorite number by your favorite number?</p>
-          <button>DO IT</button>
+  <div class="header">
+      <h1>Express</h1>
+      <p>Welcome to Express, chris</p>
+    
+      <div class="container">
+      <form class="col-md-10" action="logout" method="POST">
+        <button id="logout" type="button" class="btn btn-outline-light btn-block">logout</button>
       </form>
     </div>
-   
+  </div>
 
-    <div class="section">
-    <form  action="update" method="POST">
-      <div>
-        <p class="section-title">Want to update your favorite number?</p>
-       
-          <label for="number">enter it here:</label>
-          <input name="number" id="number">
-        <button>DO IT</button>
+    <div class="app">
+    <div class="container">
+      <div class="col-md-10 favorites">
+        <p class="favorites-text">The server's favorite number is currently 42. <br>
+          Your favorite number is currently 1.
+        </p>
       </div>
-    </form>
-    </div>
-    
-    
 
-    <div class="section">
-      <p>list of logged in users:
-        <ul>
-          <li>chris</li>
-        </ul>
-      </p>
+      <div class="col-md-10  section ">
+        <form>
+          <p class="section-title">Want to increment the server's favorite number by your favorite number?</p>
+          <button class="btn btn-secondary btn-block btn-sm">DO IT</button>
+        </form>
+      </div>
+
+      <div class="col-md-10  section">
+        <form action="update" method="POST">
+          <div>
+            <p class="section-title">Want to update your favorite number?</p>
+            <label for="number">enter it here:</label>
+            <input class="form-control" name="number" id="number">
+            <br>
+            <button class="btn btn-secondary btn-block btn-sm">DO IT</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-10  section">
+        <p>list of logged in users:
+          <ul>
+            <li>chris</li>
+          </ul>
+        </p>
+      </div>
     </div>
-   
-        
-  
+      </div>
+
 </body>
 
 </html>

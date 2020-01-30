@@ -1,5 +1,5 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
   background: #f8f8f8;
   padding: 0;
   margin: 0;
@@ -9,46 +9,28 @@ body {
   text-align: center;
   background: #650000;
   color: white;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   margin: 0;
 }
 
 .section {
   display: block;
-  width: 60%;
-  margin: .5rem auto;
-  padding: .5rem;
-  border: 3px solid #ababab;
-  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem auto;
   background: #e5e4e4;
-    text-align: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 .section-title {
   font-size: 1.2rem;
-  margin: .25rem;
+  margin: 0.1rem;
+  margin-bottom: .75rem;
   text-align: center;
 }
-
 
 a {
-  color: #00B7FF;
-}
-
-button {
-  display: block;
-  padding: .5rem 1rem;
-  font-style: italic;
-  border-radius: 1rem;
-  font-weight: 600;
-  border: 3px black;
-  outline: none;
-  margin: .5rem auto;
-  text-align: center;
-}
-
-button:active {
-  transform: scale(1.1);
+  color: #00b7ff;
 }
 
 form {
@@ -56,21 +38,35 @@ form {
   margin: 0 auto;
 }
 
+.favorites {
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.favorites-text {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.app {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+button {
+  margin: 0.25rem;
+}
+
 input {
-  border-radius: 1rem;
-  border: none;
-  outline: none;
-  padding: .4rem;
-  margin: .25rem .5rem;
+  margin: 0.25rem;
 }
 
-#logout {
-  background: none;
-  font-size: 1rem;
-  color: white;
-  border: 1px solid white;
-  width: 10rem;
+label {
+  margin: 0.5rem;
 }
 
-
-
+ul {
+  list-style-type: square;
+  text-align: left;
+}
