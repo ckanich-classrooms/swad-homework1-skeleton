@@ -9,32 +9,35 @@
 <body>
 
   <div class="header">
-      <h1>Express</h1>
-      <p>Welcome to Express, chris</p>
-    
-      <div class="container">
-      <form class="col-md-10" action="logout" method="POST">
-        <button id="logout" type="button" class="btn btn-outline-light btn-block">logout</button>
-      </form>
+    <h1>Express</h1>
+    <p>Welcome to Express, chris</p>
+
+    <div class="container">
+      <div class="row justify-content-end">
+        <form class="col-auto" action="logout" method="POST">
+          <button id="logout" type="button" class="btn btn-outline-light">logout</button>
+        </form>
+      </div>
     </div>
   </div>
 
-    <div class="app">
+  <div class="app">
     <div class="container">
-      <div class="col-md-10 favorites">
+      <div class="row">
+      <div class="col-md-3 favorites">
         <p class="favorites-text">The server's favorite number is currently 42. <br>
           Your favorite number is currently 1.
         </p>
       </div>
 
-      <div class="col-md-10  section ">
+      <div class="col-md-3  section ">
         <form>
           <p class="section-title">Want to increment the server's favorite number by your favorite number?</p>
           <button class="btn btn-secondary btn-block btn-sm">DO IT</button>
         </form>
       </div>
 
-      <div class="col-md-10  section">
+      <div class="col-md-3  section">
         <form action="update" method="POST">
           <div>
             <p class="section-title">Want to update your favorite number?</p>
@@ -46,7 +49,7 @@
         </form>
       </div>
 
-      <div class="col-md-10  section">
+      <div class="col-md-2  section">
         <p>list of logged in users:
           <ul>
             <li>chris</li>
@@ -54,7 +57,8 @@
         </p>
       </div>
     </div>
-      </div>
+    </div>
+  </div>
 
 </body>
 
